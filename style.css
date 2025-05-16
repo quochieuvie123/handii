@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --second-color: #b9b9b9;
+    --primary-color: #b5afaf;
+    --black-color: #020101;
+}
+
+body {
+    background-image: url("handiilogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+a {
+    color: var(--second-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container bao toàn bộ */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Khối đăng nhập */
+.login_container {
+    position: relative;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    padding: 80px 40px 60px 40px; /* Chừa khoảng trên để không đè chữ */
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: var(--second-color);
+    backdrop-filter: blur(25px);
+}
+
+/* Tiêu đề đăng nhập */
+.login_title {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightblue;  /* Nền xanh nhạt */
+    padding: 10px 30px;
+    border-radius: 30px;
+    white-space: nowrap;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+
+.login_title span {
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+/* Ô input */
+.input_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.input_field {
+    width: 100%;
+    font-size: 16px;
+    height: 55px;
+    color: var(--second-color);
+    background: transparent;
+    padding-inline: 20px 54px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.input_field:focus ~ .label,
+.input_field:valid ~ .label {
+    font-size: 14px;
+    top: -10px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.icon {
+    position: absolute;
+    font-size: 20px;
+    top: 18px;
+    right: 25px;
+}
+
+/* Nút đăng nhập */
+.input-submit {
+    background: #fff6f6;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.input-submit:hover {
+    background: lightblue;
+}
+
+/* Đăng ký */
+.signup {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.signup span a:hover {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+.signup a {
+    font-weight: 500;
+}
+
+.go-handii {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.go-handii:hover {
+    background: #0056b3;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 564px) {
+    .container {
+        padding: 20px;
+    }
+
+    .login_container {
+        width: 100%;
+        padding: 40px 20px;
+    }
+}

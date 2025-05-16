@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="final.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <script src="slideshow.js" defer></script>
+        <title>Handii</title>
+    </head>
+
+    <body>
+        <!--Side-bar-->
+        <div class="sidebar">
+            <a href="#home">🏠 Trang chủ</a>
+            <a href="#about">👤 Về chúng tôi</a>
+            <a href="#products">🎁 Sản phẩm</a>
+            <a href="#articles">📝 Bài viết</a>
+            <a href="#contact">📞 Liên hệ chúng tôi</a>
+
+            <div id="greeting" class="greeting-sidebar"></div> <!-- Thêm dòng này -->
+        </div>        
+        <!--Thanh header-->
+        <header>
+            <div class="top-bar">
+              <img src="handii.jpg" alt="Logo" class="logo" />
+              <div class="brand-text">
+                <h2>Handii</h2>
+                <p>Hộp quà kí ức</p>
+              </div>
+            </div>
+            <div class="slogan">
+              <strong>"Handii-with love, made for you"</strong>
+            </div>
+        </header>
+
+        <!--Section nội dung-->
+        <main>
+            <!--Trang chủ-->
+            <section id="home">
+                <h2>Chào mừng đến với Handii-Hộp quà kí ức</h2>
+                <p>Nơi lưu giữ ký ức tuổi thơ qua từng món quà nhỏ xinh.</p>
+                <a href="#about">➡️ Giới thiệu của chúng tớ</a>
+                <div class="content">
+                    <h2>Slideshow</h2>
+                    <p>Nay cua handii
+                    <strong>Handii- Hop qua ki uc</strong>
+                    </p>
+                </div>
+                <div class="slider">
+                    <div class="track">
+                        <img src="back0.png" alt="background 0" class="item">
+                        <img src="back1.png" alt="background 1" class="item">
+                        <img src="back2.png" alt="background 2" class="item">
+                        <img src="capy.jpg" alt="capybara" class="item">
+                        <img src="chimcchandii.jpg" alt="chimcanhcut" class="item">
+                        <img src="thú.jpg" alt="mocthu" class="item">
+                    </div>
+                
+                    <!-- Nút điều hướng -->
+                    <div class="nav-btn left">&#10094;</div>
+                    <div class="nav-btn right">&#10095;</div>
+                
+                    <!-- Dấu chấm điều hướng -->
+                    <div class="dots">
+                        <div class="dot selected"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>Giới thiệu</h2>
+                <p>Có những điều thuộc về quá khứ nhưng nhưng thật ra vẫn lặng lẽ vẹn nguyên theo năm tháng. Một chiếc móc khóa nhỏ gợi nhớ kỷ niệm đầu tiên, một chú gấu bông từng đồng hành qua những giấc mơ, hay một bông hoa chẳng bao giờ tàn phai… Những ký ức ấy vẫn luôn nằm đó, chỉ chờ một ngày được đánh thức.</p>
+                <p>Và hôm nay, Handii mở chiếc hộp thời gian! Những bộ sưu tập đặc biệt sắp ra mắt - nơi từng món quà không chỉ được làm từ sợi len, vải vóc, mà còn đan cài những xúc cảm dịu dàng. Đây không chỉ đơn thuần là một bộ sưu tập, mà là một hành trình cảm xúc, đưa bạn đến với những khoảnh khắc đẹp nhất.</p>
+                <p>Mỗi bộ sưu tập là một thế giới riêng, một câu chuyện riêng, nhưng tất cả đều được tạo nên từ tình yêu dành cho ký ức và sự sáng tạo. Hãy chạm vào từng món quà và cảm nhận - không chỉ bằng đôi mắt, mà bằng cả trái tim. Bạn có sẵn sàng mở chiếc hộp này và khám phá những điều bất ngờ bên trong?</p>
+                <p><span style="background-color: cyan;">Handii - Handmade with love, made for you!</span></p>
+                <a href="#products">➡️ Xem Sản phẩm</a>
+                
+                <!-- Flexbox để ảnh hiển thị ngang -->
+                <div style="display: flex; gap: 20px; margin-top: 20px;">
+                    <img src="handii.jpg" alt="Ảnh đại diện" width="500">
+                    <img src="collect.jpg" alt="Collection" width="500">
+                </div>
+            </section>
+
+            <!--Sản phẩm-->
+            <section id ="products">
+                <h3> Sản phẩm của chúng tớ</h3>
+                <div class="sanpham-voivatho">
+                    <h3><span style ="background-color: deepskyblue;"> 1.Voi và thỏ con</span></h3>
+                    <p>Ngược dòng ký ức: Bản nhạc cất giấu cả tuổi thơ</p>
+                    <p> <span style="background-color: cyan;">~ Có ai còn nhớ “Chú voi con ở Bản Đôn” hay “Chú thỏ con” đáng yêu ngày nào không? ~</span></p>
+                    <img src ="voi.jpg"
+                    alt="Chu voi con o Ban Don"
+                    width ="400">
+                    <img src ="thỏ.jpg"
+                    alt="Chu tho con"
+                    width ="400">
+                    <p><strong>Giá:</strong>39.000/1</p>
+                        <a href="https://www.facebook.com/share/p/196GCGve7c/" target="_blank">
+                            <button>Nhấp vào đây để mua hàng</button>
+                        </a>
+                </div>
+                <br>
+
+                <div class="sanpham-heovavit">
+                    <h3><span style ="background-color: deepskyblue;"> 2.Heo Peppa và vịt Donald</span></h3>
+                    <p>  Ngược dòng ký ức:Màn ảnh tuổi thơ </p>
+                    <p><span style="background-color: cyan;"> ~ Bạn còn nhớ dáng đi lon ton của Peppa hay giọng nói líu ríu khiến ai cũng bật cười của Vịt Donald không ? ~ </span> </p>
+                    <img src ="heo.jpg"
+                    alt="Heo Peppa"
+                    width ="400">
+                    <img src ="vịt.jpg"
+                    alt ="Vit Donald"
+                    width ="400">
+                    <p><strong>Giá:</strong>39.000</p>
+                        <a href="https://www.facebook.com/share/p/16FLYAzWca/" target="_blank">
+                            <button>Nhấp vào đây để mua hàng</button>
+                        </a>
+                </div>
+                <br>
+
+                <h3> Các sản phẩm khác</h3>
+                <div class="product-container">
+                    <div class="product-card">
+                        <p><strong>Móc khóa len capybara</strong></p>
+                        <p>Capybara là loài gặm nhấm lớn nhất thế giới, nổi tiếng với tính cách <span style ="background-color: aqua;">hiền lành và hòa đồng</span>, thường được coi là biểu tượng của <span style ="background-color: aqua;">sự bình yên và dễ mến</span></p>
+                        <p>Handii sẽ cho bạn biết được 1 capybara dễ thương yêu nước Việt Nam 
+                            <span class="viet-flag">Tự hào là người Việt Nam!!</span>
+                          </p>
+                        <img src ="capy.jpg"
+                        alt ="Capybara yêu nước"
+                        width="300">
+                        <p><strong>Giá:</strong> 38.000đ</p>
+                            <a href="https://shopee.vn/M%C3%B3c-kho%C3%A1-len-capybara-%C4%91%E1%BB%99i-n%C3%B3n-l%C3%A1-Vi%E1%BB%87t-Nam-m%C3%B3c-kho%C3%A1-len-mini-cute-i.1381671269.27331399368?is_from_login=true" target="_blank">
+                                <button>Mua trên Shopee</button>
+                            </a>
+                    </div>
+                    <div class="product-card">
+                        <p><strong>Móc khóa cánh cụt dễ thương</strong></p>
+                        <p> Chim cánh cụt là một trong những loài động vật đáng yêu nhất thế giới với <span style ="background-color: aqua;">dáng đi lạch bạch và hình dáng dễ thương</span>. </p>
+                        <p>Đến với Handii, bạn có thể được nhận những móc len cánh cụt rất dễ thương cùng với phụ kiện như túi, mũ và len đầy màu sắc</p>
+                        <p> </p>
+                        <img src ="chimcchandii.jpg"
+                        alt ="Cánh cụt handii nè !!"
+                        width ="300">
+                        <p><strong>Giá:</strong>52.000</p>
+                            <a href="https://shopee.vn/M%C3%B3c-kho%C3%A1-len-C%C3%A1nh-c%E1%BB%A5t-c%E1%BB%B1c-CUTE-m%C3%B3c-kho%C3%A1-len-mini-i.1381671269.27681405289" target="_blank">
+                                <button>Mua trên Shopee</button>
+                            </a>
+                    </div>
+                    <div class="product-card">
+                        <p><strong>Móc khóa thú dễ thương, vui nhộn</strong></p>
+                        <p> Gấu trúc ôm cây ngủ <span style ="background-color: aqua;">khò khò</span>, voi con nghịch nước <span style ="background-color: aqua;">tung tăng</span>, vịt nhỏ <span style="background-color: aqua;">lạch bạch</span> chạy theo nắng, còn heo bé thì lăn tròn như cục bông gòn <span style ="background-color: aqua;">dễ thương hết biết</span>!</p>
+                        <p> Handii không chỉ có mỗi capybara yêu nước, chim cánh cụt dễ thương mà có tới 1 vườn thú rất xinh đẹp và dễ thương đang chờ các bạn đấy nhé</p>
+                        <img src="thú.jpg"
+                        alt="Vườn thú nhỏ xinh của Handii"
+                        width ="300">
+                        <p><strong>Giá:</strong>38.000</p>
+                            <a href="https://shopee.vn/BLINDBOX-M%C3%B3c-kho%C3%A1-len-handmade-th%C3%BA-%C3%BA-m%E1%BB%81m-m%E1%BB%8Bn-%C4%91%C3%A1ng-y%C3%AAu-qu%C3%A1-tr%E1%BB%9Di-lu%C3%B4n-m%C3%B3c-kh%C3%B3a-th%C3%BA-%C3%BA-c%E1%BB%B1c-d%E1%BB%85-th%C6%B0%C6%A1ng-i.1381671269.27482206775" target="_blank">
+                                <button>Mua trên Shopee</button>
+                            </a>
+                    </div>
+                </div>
+            </section>
+        <br>
+            <section id="articles">
+                <h3> Bài viết nổi bật của chúng mình</h3>
+                <div class="product-container">
+                    <div class="product-card">
+                        <p><strong>Những sản phẩm tiếp theo của tụi mình</strong></p>
+                        <p>Vào ngày 15/4, sau những thời gian ủng hộ của mọi người, Handii quyết tâm chuẩn bị nhiều sản phẩm, các trang web mới để giúp mọi người có những trải nghiệm tuyệt vời bên handii</p>
+                        <img src ="kt3.png"
+                        alt="Các sản phẩm tiếp theo của tụi mình"
+                        width="300">
+                        <a href="https://www.facebook.com/share/p/16UYtdcGUz/" target="_blank">
+                            <button>Vào đây để xem nè</button>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <p><strong>Bài viết lên sản phẩm đầu tiên</strong></p>
+                        <p>Vào ngày 5/3, Handii chúng mình ra mắt những sản phẩm dễ thương đầu tiên và rất may được mọi người ủng hộ, những em cánh cụt, capybara, và nấm đáng iu cảm ơn mọi người đã ủng hộ</p>
+                        <img src ="kt02.png"
+                        alt="Các sản phẩm đầu tiên"
+                        width="300">
+                        <a href="https://www.facebook.com/share/p/19PXnjKcch/" target="_blank">
+                            <button>Vào đây để xem nè</button>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <p><strong>Bài viết khai trương đầu tiên</strong></p>
+                        <p>Vào ngày 5/3, Handii chúng mình làm một video giải trí để khai trương fanpage theo hướng đi vui nhộn giúp mọi người có thể giải trí, và giúp mọi người có thể nhận biết chúng tớ nhiều hơn</p>
+                        <img src ="kt1.png"
+                        alt="Khai trương ngày 5/3"
+                        width="300">
+                        <a href="https://www.facebook.com/share/v/16SJdjjX8X/" target="_blank">
+                            <button>Vào đây để xem nè!!</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h3>Chi tiết liên hệ</h3>
+                <div class="container">
+              
+                  <!-- Facebook -->
+                  <a href="https://www.facebook.com/handii.hopquakyuc" target="_blank" class="card facebook">
+                    <div class="face face1">
+                      <div class="content">
+                        <i class="fab fa-facebook"></i>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <h3>Facebook</h3>
+                        <p>Đây là fanpage chính thức của Handii-Hộp quà kí ức</p>
+                        <p>Hãy follow để xem những móc bông đáng iu của tụi mình nhé</p>
+                      </div>
+                    </div>
+                  </a>
+              
+                  <!-- TikTok -->
+                  <a href="https://www.tiktok.com/@handii.hopquakyuc?is_from_webapp=1&sender_device=pc" target="_blank" class="card tiktok">
+                    <div class="face face1">
+                      <div class="content">
+                        <i class="fab fa-tiktok"></i>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <h3>TikTok</h3>
+                        <p>Đây là TikTok chính thức của Handii-Hộp quà kí ức</p>
+                        <p>Xem video tấu hài và khám phá các bạn cook gì trong hộp quà nha!</p>
+                      </div>
+                    </div>
+                  </a>
+              
+                  <!-- Instagram -->
+                  <a href="https://www.instagram.com/handii.hopquakyuc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="card instagram">
+                    <div class="face face1">
+                      <div class="content">
+                        <i class="fab fa-instagram"></i>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <h3>Instagram</h3>
+                        <p>Đây là Instagram chính thức của Handii-Hộp quà kí ức</p>
+                        <p>Follow để săn mã giảm giá siêu hot mỗi ngày nhé!</p>
+                      </div>
+                    </div>
+                  </a>
+              
+                  <!-- Shopee -->
+                  <a href="https://shopee.vn/handiihopquakyuc" target="_blank" class="card shopee">
+                    <div class="face face1">
+                      <div class="content">
+                        <img src="8.png" alt="Shopee">
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <h3>Shopee</h3>
+                        <p>Trang Shopee chính thức của Handii-Hộp quà kí ức</p>
+                        <p>Săn deal mỗi ngày để rước em móc bông dễ thương về nhà nhé!</p>
+                      </div>
+                    </div>
+                  </a>
+              
+                </div>
+                <br><br>
+                <a href="#home">⬆️ Quay lại đầu trang</a>
+              </section>
+              
+            
+        </main>
+        <br>
+        <br>
+        <br>
+        <footer style="background-color: cyan;">
+            <hr>
+            author: Phan Quốc Hiếu <br>
+            &copy; copyright reserved <br>
+            <small><a href="mailto:phanquochieu0409@gmail.com">phanquochieu0409@gmail.com</a></small>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login_container">
+            <div class="login_title">
+                <span>Đăng nhập</span>
+            </div>
+
+            <!--Nhập tên người dùng-->
+      <div class="input_wrapper">
+                <input type="text" id="user" class="input_field" required>
+                <label for="user" class="label">Tên người dùng</label>
+                <i class="fa-regular fa-user icon"></i>
+      </div>
+
+            <!--Nhập email-->
+      <div class="input_wrapper">
+                <input type="email" id="email" class="input_field" required>
+                <label for="email" class="label">Email</label>
+                <i class="fa-solid fa-envelope icon"></i>
+      </div>
+
+            <!--Nút đăng nhập-->
+      <div class="input_wrapper">
+        <div class="input_wrapper">
+            <button class="go-handii" onclick="login()" style="border-radius: 25px; padding: 10px 20px; background-color: #007bff; color: white; border: none;">Đi đến Handii</button>
+          </div>
+          
+      </div>
+  </div>
+    </div>
+    <!--Thêm 1 tí của JS-->
+    <script>
+        function login() {
+          var user = document.getElementById("user").value;
+          var email = document.getElementById("email").value;
+        
+          if (user && email) {
+            // Tách tên cuối cùng
+            var parts = user.trim().split(" ");
+            var lastName = parts[parts.length - 1];
+        
+            // Lưu tên rút gọn vào localStorage
+            localStorage.setItem("userName", lastName);
+        
+            window.location.href = "handii(1).html";
+          } else {
+            alert("Vui lòng nhập đầy đủ tên người dùng và email.");
+          }
+        }
+        </script>
+        
+</body>
+</html>
+

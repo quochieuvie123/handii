@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="icon" type ="image/jpg" href ="heo.jpg">
+    <title>Hieu Website</title>
+    <body> 
+        <!--Form-->
+        <form action ="index.php" method ="POST">
+            <label for ="username">username:</label>
+            <input type ="text" id ="username" placeholder="Nhập username" minlength="6" maxlength="15"> <br>
+
+            <label for ="password">password:</label>
+            <input type ="password" id ="password" placeholder="Nhập password" > <br>
+
+            <label for ="email">email:</label>
+            <input type ="email" id ="email" placeholder="nhapemail@gmail.com"> <br>
+            <label for ="phone">phone#:</label>
+            <input type ="tel" id ="phone" placeholder="0912345678" pattern="[0][0-9]{9}"> <br>
+            <!--Chat Gpt-->
+            <label for="gender">Giới tính:</label><br>  <!--Tạo nhãn giới tính-->
+            <input type="radio" id="male" name="gender" value="Nam">  <!--Tạo nút radio, định danh, nhóm, giá trị gửi đi form-->
+            <label for="male">Nam</label><br>
+
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br>
+
+            <input type="reset"> <br>
+            <input type ="submit">
+        </form>
+        <!--Text-->
+        <p> This is normal text</p>
+        <p> This is <b>bold</b> text</p>
+        <p> This is <i>italic</i> text</p>
+        <p> This is <u>underlined</u> text</p>
+        <p> This is <del>deleted</del> text</p>
+        <p> This is <big>big</big> text</p>
+        <p> This is <small>small</small> text</p>
+        <p> This is <sub> subscript</sub> text</p>
+        <p> This is <sup>superscript</sup> text</p>
+        <p> This is <tt>monospaced</tt> text</p>
+        <p> This is <mark style ="background-color: lightgreen">normal</mark> text</p>
+        <!--GROUP TOGETHER HTML -->
+        <!--<SPAN> CHỈ CHIẾM NỘI DUNG NÓ BAO QUANG, PHẦN NHỎ ĐOẠN VĂN, ĐÁNH DẤU-->
+        <!--<DIV> LÀ BLOCK, CHIẾM TOÀN BỘ CHIỀU NGANG TRANG, HEADER, SIDEBAR,CONTENT-->
+        <h1> <span style ="background-color:tomato;">This is a span</span></h1>
+        <h1><div style ="background-color: cyan;">This is a div sentences</div></h1>
+
+        <!--Unordered List-->
+        <ul>
+            <h4>Món ăn</h4>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>coffee</li>
+            <ul>
+                <li>coffee beans</li>
+                <li>creamer</li>
+                <li>sugar</li>
+            </ul>
+        </ul>
+
+        <!--Ordered List-->
+        <h4> To do list </h4>
+        <ol>
+            <li> eat breakfast</li>
+            <li>go to class</li>
+            <li>walk dog</li>
+            <li>work</li>
+        </ol>
+
+        <!--Description List-->
+        <dl style="background-color: lightblue; border:2px solid">
+            <dt> dragon</dt>
+            <dd>Từ xa xưa con Rồng đã có trong <span style ="background-color: red;">tâm thức, là vật tổ sùng bái</span>của người Việt, nhiều huyền thoại về rồng, với biểu hiện linh thiêng. Rồng là điểm hội tụ với ý nghĩa vũ trụ và nhân sinh. </dd>
+            <dt>phoenix</dt>
+            <dt>vampire</dt>
+            <dt>werwolf</dt>
+        </dl>
+    </body>
+</html>

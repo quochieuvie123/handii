@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+    padding-left: 220px; /* chừa khoảng trống cho sidebar */
+  }
+
+.content {
+    color: #fff;
+    margin-top: 100px;
+}
+
+.slider {
+    width: 90%;
+    max-width: 800px;
+    height: 70vh;
+    max-height: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #000; /* Màu nền dự phòng */
+}
+
+.track {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.item {
+    min-width: 100%;
+    height: 100%;
+    position: relative; /* Thêm position relative */
+    overflow: hidden; /* Ẩn phần ảnh thừa */
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Quan trọng: fill toàn bộ khung */
+    object-position: center; /* Căn giữa trọng tâm ảnh */
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #666;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.selected {
+    background-color: #eee;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    padding: 0 10px;
+    color: #ccc;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index: 1;
+}
+
+.nav-btn.right {
+    right: 0;
+}
+
+.nav-btn.left {
+    left: 0;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    color: #fff;
+}
