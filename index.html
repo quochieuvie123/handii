@@ -40,29 +40,53 @@
     </div>
     <!--Thêm 1 tí của JS-->
     <script>
-        function login() {
-          var user = document.getElementById("user").value;
-          var email = document.getElementById("email").value;
-        
-          if (user && email) {
-            // Tách tên cuối cùng
-            var parts = user.trim().split(" ");
-            var lastName = parts.slice(-2).join(" ");
+  function login() {
+    var user = document.getElementById("user").value;
+    var email = document.getElementById("email").value;
 
-            var fullName = user.trim().toLowerCase();
-            if (fullName === "nigpo" || fullName === "phương anh" || fullName === "phuongg anhh" || fullName === "mỹ dung" || fullName === "trúc diêu" || fullName === "trà my" || fullName === "huỳnh ngọc" || fullName === "minh ngân" || fullName === "cẩm tú" || fullName === "thu hà" || fullName === "thanh hồng" || fullName === "quang minh") {
-                  lastName += " dthw >.<";
-                }
-        
-            // Lưu tên rút gọn vào localStorage
-            localStorage.setItem("userName", lastName);
-        
-            window.location.href = "handii(1).html";
-          } else {
-            alert("Vui lòng nhập đầy đủ tên người dùng và email.");
-          }
-        }
-        </script>
+    if (user && email) {
+      var fullName = user.trim().toLowerCase();
+      var lastName = "";
+
+      // Trường hợp đặc biệt: ryan
+      if (fullName === "ryan") {
+        lastName = "Ryan Yamall!!";
+      }
+      // Các tên dễ thương thêm 'dthw >.<'
+      else if (
+        fullName === "nigpo" ||
+        fullName === "phương anh" ||
+        fullName === "phuongg anhh" ||
+        fullName === "mỹ dung" ||
+        fullName === "trúc diêu" ||
+        fullName === "trà my" ||
+        fullName === "huỳnh ngọc" ||
+        fullName === "minh ngân" ||
+        fullName === "cẩm tú" ||
+        fullName === "thu hà" ||
+        fullName === "thanh hồng" ||
+        fullName === "quang minh"
+      ) {
+        var parts = user.trim().split(" ");
+        lastName = parts.slice(-2).join(" ") + " dthw >.<";
+      }
+      // Trường hợp bình thường
+      else {
+        var parts = user.trim().split(" ");
+        lastName = parts.slice(-2).join(" ");
+      }
+
+      // Lưu tên vào localStorage
+      localStorage.setItem("userName", lastName);
+
+      // Chuyển trang
+      window.location.href = "handii(1).html";
+    } else {
+      alert("Vui lòng nhập đầy đủ tên người dùng và email.");
+    }
+  }
+</script>
+
         
 </body>
 </html>
