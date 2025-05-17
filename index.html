@@ -47,7 +47,12 @@
           if (user && email) {
             // Tách tên cuối cùng
             var parts = user.trim().split(" ");
-            var lastName = parts[parts.length - 1];
+            var lastName = parts.slice(-2).join(" ");
+
+            var fullName = user.trim().toLowerCase();
+            if (fullName === "nigpo" || fullName === "phương anh") {
+                  lastName += " dth";
+                }
         
             // Lưu tên rút gọn vào localStorage
             localStorage.setItem("userName", lastName);
