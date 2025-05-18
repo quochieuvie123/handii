@@ -55,21 +55,35 @@
       // Các tên dễ thương thêm 'dthw >.<'
       else if (
         fullName === "nigpo" ||
-        fullName === "phương anh" ||
-        fullName === "phuongg anhh" ||
-        fullName === "mỹ dung" ||
-        fullName === "trúc diêu" ||
-        fullName === "trà my" ||
-        fullName === "huỳnh ngọc" ||
-        fullName === "minh ngân" ||
-        fullName === "cẩm tú" ||
-        fullName === "thu hà" ||
-        fullName === "thanh hồng" ||
-        fullName === "quang minh"
+        fullName === " phạm phương anh" ||
+        fullName === "phuongg anhh"
       ) {
         var parts = user.trim().split(" ");
         lastName = parts.slice(-2).join(" ") + " dthw >.<";
       }
+      else if (
+        fullName === "nguyễn vũ mỹ dung" ||
+        fullName === "nguyễn phan trúc diêu" ||
+        fullName === "đoàn trà my"  ||
+        fullName === "minh ngân" ||
+        fullName === "đỗ cẩm tú" ||
+        fullName === " Nguyễn thị thu hà"
+      ) {
+        var parts = user.trim().split(" ");
+        lastName = parts.slice(-2).join(" ") + " từ Sấy Sắc nha!!";
+      }
+
+      else if (
+        fullName === "phan thị thanh hồng" ||
+        fullName === "lê kiều trinh" 
+      ) {
+        var parts = user.trim().split(" ");
+        lastName = parts.slice(-2).join(" ") + " từ Stất up nha!!";
+      }
+      else if (fullName === "Trần Nhật Pháp" ) {
+        lastName = "Xin chào thầy Trần Nhật Pháp";
+      }
+
       // Trường hợp bình thường
       else {
         var parts = user.trim().split(" ");
