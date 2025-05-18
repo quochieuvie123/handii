@@ -173,13 +173,77 @@ a:hover {
 
 
 /* Responsive */
+/* Responsive nâng cao cho màn hình nhỏ */
 @media only screen and (max-width: 564px) {
     .container {
-        padding: 20px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.35); /* Tăng độ đậm nền để chữ nổi bật hơn */
     }
 
     .login_container {
         width: 100%;
-        padding: 40px 20px;
+        max-width: 360px; /* Giới hạn max-width vừa màn hình điện thoại */
+        padding: 40px 25px 35px 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .login_title {
+        top: -22px;
+        padding: 8px 26px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    .input_wrapper {
+        margin: 18px 0;
+    }
+
+    .input_field {
+        height: 45px;
+        font-size: 15px;
+        padding-inline: 15px 45px; /* Giảm padding hai bên cho input */
+    }
+
+    .label {
+        top: 12px;
+        left: 15px;
+    }
+
+    .input_field:focus ~ .label,
+    .input_field:valid ~ .label {
+        font-size: 13px;
+        top: -8px;
+        left: 15px;
+        padding: 0 8px;
+    }
+
+    .icon {
+        font-size: 18px;
+        top: 15px;
+        right: 20px;
+    }
+
+    .input-submit {
+        height: 45px;
+        font-size: 15px;
+        margin-top: 18px;
+        border-radius: 25px;
+    }
+
+    .signup {
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    .signup span a:hover {
+        color: #1e90ff;
+    }
+
+    .go-handii {
+        padding: 9px 18px;
+        font-size: 15px;
+        border-radius: 22px;
     }
 }
+

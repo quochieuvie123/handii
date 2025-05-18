@@ -395,3 +395,133 @@ main {
   font-weight: bold;
   display: inline-block;
 }
+
+/* Responsive cho tablet và điện thoại */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 60px; /* Thu nhỏ khoảng cách chừa cho sidebar */
+  }
+  header {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+  }
+  .sidebar {
+    width: 60px;
+    padding-top: 60px;
+  }
+  .sidebar a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .top-bar {
+    padding: 15px 20px;
+  }
+  .brand-text h2 {
+    font-size: 20px;
+  }
+  .brand-text p {
+    font-size: 12px;
+  }
+  .slogan {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+  main {
+    margin-top: 80px;
+    padding: 15px;
+  }
+  .slider {
+    max-width: 90vw;
+    height: 50vh;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+  header {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e0ffff;
+  }
+  .sidebar a {
+    font-size: 16px;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+  }
+  .top-bar {
+    padding: 15px 10px;
+    flex-wrap: wrap;
+  }
+  .brand-text h2 {
+    font-size: 18px;
+  }
+  .brand-text p {
+    font-size: 12px;
+  }
+  .slogan {
+    font-size: 16px;
+    padding: 10px 15px;
+    text-align: center;
+  }
+  main {
+    margin-top: 60px;
+    padding: 10px;
+  }
+  .slider {
+    height: 40vh;
+  }
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar {
+    padding: 10px 10px;
+  }
+  .brand-text h2 {
+    font-size: 16px;
+  }
+  .brand-text p {
+    font-size: 10px;
+  }
+  .slogan {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  .sidebar a {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+  .slider {
+    height: 30vh;
+  }
+  .sanpham-voivatho, .sanpham-heovavit {
+    width: 100%;
+    padding: 15px;
+  }
+  .product-card {
+    padding: 8px;
+  }
+}
